@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 06</title>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+        h1{
+            color: aliceblue;
+        }
+        h2{
+            color: aliceblue;
+        }
+        h3{
+            color: rgb(255, 177, 20);
+        }
+        p{
+            color: rgb(77, 103, 255);
+        }
+        ul{
+            color: rgb(255, 177, 20);
+        }
+        ol{
+            color: rgb(255, 177, 20);
+        }
+        a{
+            color: aquamarine-;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>TP 06 - empezamos con el diseño</h1>
+    <h2>Joaquin Fernandez</h2>
+
+    <h3>1.1- ¿Qué significa CSS?</h3>
+    <p>CSS significa “Cascading Style Sheets” (hojas de estilo en cascada)
+    </p>
+
+    <h3>1.2- ¿Para qué sirve el CSS? ¿Qué programa se utiliza para interpretar el CSS?</h3>
+    <p>CSS sirve para darle estilo o diseño a la pagina HTML. algunos programas que se usan
+        son: fire fox - google chrome - edge
+    </p>
+
+    <h3>1.3- ¿A qué se llama regla de CSS? </h3>
+    <p>Una regla css se compone de uno o más selectores seguidos de una declaración que consta de una o más
+        parejas de propiedad y valor. Un archivo css puede contener múltiples reglas.</p>
+
+    <h3>1.4- ¿Cuál es la anatomía de la regla de CSS? Agregar imagen
+        explicativa y utilizando una lista descriptiva explicar sus elementos.</h3>
+    <img src="anatomia.css.jpg" width="300px">
+    <ul>
+        <li>Selector: El elemento HTML en el que comienza la regla. Esta selecciona elos elementos
+            a dar estilo en este caso, los elementos p. Para dar estilo a un elemento diferente, solo cambia el
+            selector</li>
+        <li>Declaracion: Una sola regla como color: red; especifica a cuál de las propiedades del elemento
+            quieres dar estilo.</li>
+        <li>Propiedad: Maneras en las cuales puedes dar estilo a un elemento HTML. En este caso, color es una propiedad
+            del elemento p . En CSS, seleccionas qué propiedad quieres afectar en tu regla</li>
+        <li>Valor de la Propiedad: A la derecha de la propiedad, después de los dos puntos (:), tienes el valor de la
+            propiedad,
+            para elegir una de las muchas posibles apariencias para una propiedad determinada hay muchos
+            valores para color además de red.</li>
+    </ul>
+
+    <h3>1.5- ¿Qué es un selector en CSS?</h3>
+    <p>En CSS los selectores se utilizan para delimitar los elementos HTML de nuestra página web a los que queremos
+        aplicar
+        estilo.</p>
+
+    <h3>1.6- Identificar y definir los selectores: de ID, de clases, universal, de etiquetas, descendente</h3>
+    <p>selector de id:En un documento HTML, los selectores de ID de CSS buscan un elemento según el contenido del ID del
+        atributo, asegurando que el ID del atributo seleccionado coincida con el valor dado en el selector.</p>
+
+    <h3>1.7- Explicar brevemente utilizando una lista ordenada: ¿cómo funciona el CSS?</h3>
+    <h4>Como funciona el CSS</h4>
+    <ol>
+        <li>El navegador carga el HTML</li>
+        <li>El HTML se convertió en un DOM, que representa el documento en la memoria del ordenador, y se explica más
+            detalladamente en la segunda sección.</li>
+        <li>El navegador buscará la mayoría de los recursos HTML, incluidas imágenes, vídeos y CSS vinculados al
+            documento. JavaScript aparece un poco más adelante en el proceso, pero no lo discutiremos más para evitar
+            complicar las cosas.</li>
+        <li>El navegador analiza el CSS y ordena reglas en cubos según el tipo de selector, como elemento, clase, ID,
+            y calcula qué reglas deben aplicarse y a qué nodos en el DOM se aplica el estilo, el árbol de renderización.
+        </li>
+        <li>El árbol de renderización presenta la estructura en que los nodos deben aparecer después de aplicarle las
+            reglas.
+        </li>
+        <li>En la pantalla se muestra el aspecto visual de la página</li>
+    </ol>
+
+    <h3>1.8- ¿Cuáles son las tres formas para vincular CSS con HTML?</h3>
+    <p>Una de las formas es Utilizando la etiqueta style En nuestro HTML y dentro de la etiqueta head utilizaremos
+        la etiqueta style es decir que los CSS se aplican al MISMO docuemnto HTML <br>
+        Utilizando el atributo style En nuestro HTML aplicaremos estilos directamente a la etiqueta. Recordemos que
+        los atributos con características de un etiqueta. <br>
+        Utilizando un archivo externo Esta opción es la que nos permite vincular un archivo HTML con un archivo CSS.
+        Los archivos CSS tienen extensión
+    </p>
+
+    <h3>1.9- Ingrese al sitio CSS Zen Garden http://www.csszengarden.com y analicemos el código HTML siguiendo los
+        siguientes pasos:
+        Hacer clic en View All Designs
+        Elegir dos diseños y abrirlo en pestañas distintas
+        En el primer diseño presiona ctrl+u (esta combinación de teclas permite ver el código HTML en el navegador)
+        En el segundo diseño presiona ctrl+u (esta combinación de teclas permite ver el código HTML en el navegador)
+        Escribir la URL de los dos diseños seleccionados
+    </h3>
+    <h3>Responder: las etiquetas dentro de body ¿son iguales? ¿Qué es
+        lo distinto? ¿Qué contribuye al cambio de diseño?
+        Abrir los dos archivos CSS de los diseños seleccionados. ¿Son los mismos?
+        En líneas generales, el mismo HTML ¿puede tener diferentes diseños?
+    </h3>
+
+    <p><a href="https://www.csszengarden.com/202/">Diseño 1</a> <br>
+        <a href="https://www.csszengarden.com/206/">Diseño 2</a> <br>
+        Las etiquetas del body si son iguales. <br>
+        Lo distinto es el CSS, ya que toda la estructura es la misma. <br>
+        Lo que contribuye al cambio del diseño son las diferentes etiquetas del CSS
+    </p>
+
+    <h3>2.0- Utilizaremos las siguientes propiedades de CSS. Completar la columna de valores posibles para cada propiedad.</h3>
+    <table>
+        <tr>
+            <th>Propiedad</th>
+            <th>Valores posibles</th>
+        </tr>
+        <tr>
+            <td>color</td>
+            <td> orange - #009900 -  rgba(34, 12, 64, 0.6)</td>
+        </tr>
+        <tr>
+            <td>background-color</td>
+            <td>teal - rgb(153, 102, 153) -  #777799</td>
+        </tr>
+        <tr>
+            <td>font-size</td>
+            <td>xx-large - 250% -  16px</td>
+        </tr>
+        <tr>
+            <td>font-weight</td>
+            <td>300 - bolder - normal</td>
+        <tr>
+            <td>font-style</td>
+            <td> normal - italic - oblique</td>
+        </tr>
+        <tr>
+            <td>font-family</td>
+            <td>"Gill Sans Extrabold", Helvetica, sans-serif - Courier, "Lucida Console", monospace</td>
+        </tr>
+        <tr>
+            <td>text-align</td>
+            <td>start</td>
+        </tr>
+        <tr>
+            <td>text-decoration</td>
+            <td>line-through - none - underline</td>
+        </tr>
+        <tr>
+            <td>text-transform</td>
+            <td>none -  right</td>
+        </tr>
+        <tr>
+            <td>letter-spacing</td>
+            <td>normal - 0.4em - 1em</td>
+        </tr>
+        <tr>
+            <td>line-height</td>
+            <td>1.2 - 120% - 1.2em</td>
+           </tr>
+    </table>
+
+    <h3></h3>
+
+</body>
+
+</html>
