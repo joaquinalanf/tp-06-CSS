@@ -1,0 +1,13 @@
+header nav ul {
+    list-style: none;
+}
+li {
+    display: inline;
+    a{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        color: blueviolet;
+        padding: 0.5cm;
+    }
+}
